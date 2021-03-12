@@ -1,0 +1,34 @@
+.Heading_1{
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: brown;
+    background-color: darkgray;
+    width: fit-content;
+    
+}
+
+.EmployeeTable,th.TableHeading, td.DataEntry{
+    
+    border: rgb(134, 14, 14) solid 2px;
+    padding: 20px;
+    margin-top: 30px;
+    border-collapse: collapse;
+
+}
+
+.CompanyInfo{
+    padding: 50px;
+    height: 10px;
+    width: fit-content;
+    border: solid black 1px;
+    
+}
+.CompanyLink{
+    font-weight: bold;
+    font-style: italic;
+    
+}
+.Background{
+    background-color: blanchedalmond;
+  
+}
