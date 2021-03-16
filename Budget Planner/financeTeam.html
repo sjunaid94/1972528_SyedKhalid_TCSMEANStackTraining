@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Team</title>
+    <script src="budgetPlanner.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    <h1>Finance Teams</h1>
+
+    <table id="clientList">
+        <thead>
+            <tr>
+                <th>Client Name</th>
+                <th>Project Name</th>
+                <th>Budget</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <br>
+    
+    <script type="text/JavaScript">
+
+        var obj = JSON.parse(sessionStorage.getItem("projectInfo"));
+        console.log(obj);
+        
+        insertNewRecord(obj);
+        
+        function insertNewRecord(data){
+    
+            var table = document.getElementById("clientList");
+            var a = JSON.stringify(data);
+            var body = table.getElementsByTagName("tbody")[0];
+            
+    
+
+            for(i =0; i<data.length;i++){
+                
+                var x = data[i].clientName;
+                var y = data[i].projectName;
+                var z = data[i].budget;
+                var newRow = body.insertRow(body.length);
+                var cell1 = newRow.insertCell(0);  
+                cell1.innerHTML= x;                
+                var cell2 = newRow.insertCell(1); 
+                cell2.innerHTML=y;         
+                var cell3 = newRow.insertCell(2);          
+                cell3.innerHTML=z;
+                
+            }
+    }
+        sessionStorage.setItem("projectInfo_1", JSON.stringify(obj));
+        
+        </script>
+    <a href="index.html">Back</a>
+
+    
+</body>
+</html>
