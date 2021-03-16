@@ -6,13 +6,14 @@ function AddClient(){
     clientObj.projectName = document.getElementById("projectName").value;
     clientObj.budget = document.getElementById("budget").value;
     console.log(clientObj);
-    if(sessionStorage.getItem("projectInfo_1")){
-        var obj = JSON.parse(sessionStorage.getItem("projectInfo_1"));
+
+    if(sessionStorage.getItem("projectInfo")){
+        
+        var obj = JSON.parse(sessionStorage.getItem("projectInfo"));
         sessionStorage.removeItem("projectInfo");
-        clientInfo.push(obj);
+        clientInfo = obj
         clientInfo.push(clientObj);
-        sessionStorage.removeItem("projectInfo_1");
-        sessionStorage.clear();
+
     }
     else{
         clientInfo.push(clientObj);
