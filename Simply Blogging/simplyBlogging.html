@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.cs">
+    <style>
+        .heading_1{
+            border: solid 2px blue;
+        }
+    </style>
+    <script src="simpleBlogging.js"></script>
+</head>
+<body>
+    <div class="heading_1">
+        <div class="text-center">
+            <div class="text-primary">
+                <h1>Simple Blogging</h1>
+            </div>
+        </div>
+    </div>
+
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+        <a href="#" class="nav-link"> About Us</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Contact Us</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Login</a>
+        </li>
+        <li class="nav-item">
+            <a href="#" class="nav-link">Blog</a>
+        </li>
+    </ul>
+    <div class="container">
+        <form action="" method="get" class="form-group">
+    
+                <div class="row">
+                    <div class="col-2">
+
+                        <label>Tittle</label>
+                    
+                    </div>
+                    <div class="col-2">
+                        <input type="text" id="title" class="form-control"><br/>
+
+                    </div>
+                </div>
+            
+            
+            <div class="row">
+                <div class="col-2">
+                    <label>Description</label>
+                    
+                </div>
+                <div class="col-4">
+                    <textarea type="text" id="desc" class="form-control"></textarea> <br>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-2">
+                    <label>Add Image(optional) </label>
+                    
+                </div>
+                <div class="col-4">
+                    <input type="file" id="imageId" class="form-control"> <br>
+                    
+                </div>
+            </div>
+        
+            <input type="button" value="Add Blog" class="btn btn-primary" onclick="addBlog()"/>
+
+        </form>    
+    </div>
+
+    <!-- <script type="text/JavaScript">
+        var obj = JSON.parse(sessionStorage.getItem("blogObj"));
+        insertNewRecord(obj);
+
+        function insertNewRecord(data){
+    
+
+            for(i =0; i<data.length;i++){
+                
+                var x = data[i].clientName;
+                var y = data[i].projectName;
+                var z = data[i].budget;
+                document.getElementById("titleInfo").innerHTML=title;
+                document.getElementById("descInfo").innerHTML=desc;
+                document.getElementById("imageInfo").src=imageInfo;
+                
+            }
+    }
+    
+    </script> -->
+
+    
+
+    <div class="container-fluid">
+
+        <div>
+            <div id="titleInfo"></div>
+            <div id="descInfo"></div>
+            <img src="" id="imageInfo"/>
+        </div>
+
+    </div>
+
+
+
+    
+</body>
+</html>
