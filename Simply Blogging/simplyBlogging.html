@@ -6,12 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.cs">
-    <style>
-        .heading_1{
-            border: solid 2px blue;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+
+    
     <script src="simpleBlogging.js"></script>
 </head>
 <body>
@@ -74,46 +71,12 @@
                 </div>
             </div>
         
-            <input type="button" value="Add Blog" class="btn btn-primary" onclick="addBlog()"/>
+            <input type="button" value="Add Blog" class="btn btn-primary" onclick="addBlog()"/><br>
 
         </form>    
     </div>
 
-    <!-- <script type="text/JavaScript">
-        var obj = JSON.parse(sessionStorage.getItem("blogObj"));
-        insertNewRecord(obj);
-
-        function insertNewRecord(data){
-    
-
-            for(i =0; i<data.length;i++){
-                
-                var x = data[i].clientName;
-                var y = data[i].projectName;
-                var z = data[i].budget;
-                document.getElementById("titleInfo").innerHTML=title;
-                document.getElementById("descInfo").innerHTML=desc;
-                document.getElementById("imageInfo").src=imageInfo;
-                
-            }
-    }
-    
-    </script> -->
-
-    
-
-    <div class="container-fluid">
-
-        <div>
-            <div id="titleInfo"></div>
-            <div id="descInfo"></div>
-            <img src="" id="imageInfo"/>
-        </div>
-
+    <div id="lastDiv">
     </div>
-
-
-
-    
 </body>
 </html>

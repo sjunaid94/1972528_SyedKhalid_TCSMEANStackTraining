@@ -1,0 +1,47 @@
+
+.titleInfo{
+    font-style: italic;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: crimson;
+    text-align: center;
+    font-size: 40px;
+    text-decoration-line: underline;
+}
+
+
+#create{
+            
+    border: solid 1px blue;
+    background-color: darksalmon; 
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 40%;
+    
+
+}
+.descInfo{
+
+    font-style: italic;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:blue;
+    text-align: center;
+
+}
+.imageInfo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    border-radius: 8px;
+}
+
+.heading_1{
+    border: solid 2px blue;
+    background-color: darksalmon;
+}
+body{
+    background-image: url('https://mdbcdn.b-cdn.net/img/Photos/Others/images/76.jpg');
+ 
+}
