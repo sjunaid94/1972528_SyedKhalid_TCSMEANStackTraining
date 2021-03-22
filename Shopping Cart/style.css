@@ -1,0 +1,32 @@
+h1{
+    text-align: center;
+}
+h2{
+    text-decoration: underline;
+}
+#box{
+    border: solid red 1px;
+    margin: 5px;
+    height: 250px;
+}
+#cartSize{
+    text-decoration: bold;
+    text-decoration: underline;
+    float: left; 
+    padding-right: 5px;
+    font-size: 40px;
+    color: blue;
+    
+}
+#myOrder, #checkout,#totalPrice{
+    font-size: 40px;
+    color:red;
+    text-decoration: underline;
+}
+
+#itemsList,tbody,th,tr{
+    border: red solid 2px;
+    width: 50%;
+    height: 50%;
+    color: royalblue;
+}
