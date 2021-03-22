@@ -6,9 +6,7 @@ interface CartItems{
 function addProduct(itemName:string,itemPrice:string):void{
 
     let cartobj:CartItems={productName:itemName,productPrice:itemPrice};
-    console.log(cartobj);
     cartItems.push(cartobj);
-    console.log(cartItems.length);
     document.getElementById("myOrder").innerHTML= JSON.stringify(cartItems.length);
 
     sessionStorage.setItem("checkoutItems",JSON.stringify(cartItems));

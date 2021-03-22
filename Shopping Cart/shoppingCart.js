@@ -1,9 +1,7 @@
 var cartItems = [];
 function addProduct(itemName, itemPrice) {
     var cartobj = { productName: itemName, productPrice: itemPrice };
-    console.log(cartobj);
     cartItems.push(cartobj);
-    console.log(cartItems.length);
     document.getElementById("myOrder").innerHTML = JSON.stringify(cartItems.length);
     sessionStorage.setItem("checkoutItems", JSON.stringify(cartItems));
 }
