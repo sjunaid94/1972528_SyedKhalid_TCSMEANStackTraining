@@ -1,0 +1,36 @@
+
+<div class="container-fluid">
+    <h1 class="container-fluid">My Portfolio</h1> <br>
+    <p>Welcome Username <b>{{Print()}}</b></p>
+    <form #userRef1 = "ngForm" (ngSubmit)="displayTable(userRef1.value)"  class="form-group">
+        <div class="row"> 
+            <label class="col-2" style="margin: 10px;">Contact Name</label>
+            <input type="text" name="fullname" ngModel class="col-3" style="margin: 10px;"/><br>
+    </div>
+        <div class="row">
+            <label class="col-2" style="margin: 10px;">Phone No.</label>
+            <input type="number" name="num" ngModel class="col-3" style="margin: 10px;"><br>
+        </div>
+        <br>
+
+        <input type="submit" value="Display" class="btn btn-primary"><br>
+    </form>
+    <br>
+    <h3>Contact Details</h3>
+    <br>
+
+    <table *ngIf = "flag" border='1'> 
+        <tr>
+            <th>Name</th>
+            <th>Phone No.</th>
+            
+        </tr>
+        <tr *ngFor = "let info of TableInfo">
+            <td>{{info.name}}</td>
+            <td>{{info.number}}</td>
+              
+        </tr>
+        
+
+    </table>
+</div>
