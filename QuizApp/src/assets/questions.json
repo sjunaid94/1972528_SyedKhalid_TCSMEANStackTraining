@@ -1,0 +1,356 @@
+
+    [
+        {
+            "id": 1,
+            "name": "Where is world tallest building located?",
+            "options":[
+                {
+                    "id":11,
+                    "questionId":1,
+                    "answer":"Paris",
+                    "isAnswer": false
+                    
+
+                },
+                {
+                    "id":12,
+                    "questionId":1,
+                    "answer":"Chicago",
+                    "isAnswer": false
+                     
+                },
+                {
+                    "id":13,
+                    "questionId":1,
+                    "answer":"Dubai",
+                    "isAnswer": true
+                   
+                },
+                {
+                    "id":14,
+                    "questionId":1,
+                    "answer":"Delhi",
+                    "isAnswer": false
+                    
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Which is the capital of United States?",
+            "options":[
+                {
+                    "id":11,
+                    "questionId":2,
+                    "answer":"Paris",
+                    "isAnswer": false
+                    
+
+                },
+                {
+                    "id":12,
+                    "questionId":2,
+                    "answer":"Chicago",
+                    "isAnswer": false
+                    
+                },
+                {
+                    "id":13,
+                    "questionId":2,
+                    "answer":"Washington DC",
+                    "isAnswer": true
+                
+                },
+                {
+                    "id":14,
+                    "questionId":2,
+                    "answer":"Delhi",
+                    "isAnswer": false
+                    
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Who won the last FIFA World cup?",
+            "options":[
+                {
+                    "id":11,
+                    "questionId":3,
+                    "answer":"France",
+                    "isAnswer": false
+                    
+
+                },
+                {
+                    "id":12,
+                    "questionId":3,
+                    "answer":"Spain",
+                    "isAnswer": true
+                      
+                },
+                {
+                    "id":13,
+                    "questionId":3,
+                    "answer":"England",
+                    "isAnswer": false
+                    
+                },
+                {
+                    "id":14,
+                    "questionId":3,
+                    "answer":"Italy",
+                    "isAnswer": false
+                    
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Which is the biggest animal?",
+            "options":[
+                {
+                    "id":11,
+                    "questionId":4,
+                    "answer":"Whale",
+                    "isAnswer": true
+                    
+
+                },
+                {
+                    "id":12,
+                    "questionId":4,
+                    "answer":"Lion",
+                    "isAnswer": false
+                     
+                },
+                {
+                    "id":13,
+                    "questionId":4,
+                    "answer":"Cow",
+                    "isAnswer": false
+                   
+                },
+                {
+                    "id":14,
+                    "questionId":4,
+                    "answer":"Elephant",
+                    "isAnswer": false
+                    
+                }
+            ]
+        },
+        {
+            "id": 5,
+            "name": "How many holes are on a standard bowling ball?",
+            "options":[
+                {
+                    "id":11,
+                    "questionId":5,
+                    "answer":"2",
+                    "isAnswer": false
+                    
+
+                },
+                {
+                    "id":12,
+                    "questionId":5,
+                    "answer":"3",
+                    "isAnswer": true
+                     
+                },
+                {
+                    "id":13,
+                    "questionId":5,
+                    "answer":"4",
+                    "isAnswer": false
+                   
+                },
+                {
+                    "id":14,
+                    "questionId":5,
+                    "answer":"5",
+                    "isAnswer": false
+                    
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "name": "Which one of these has the longest wavelength?",
+            "options":[
+                {
+                    "id":11,
+                    "questionId":6,
+                    "answer":"Radio waves",
+                    "isAnswer": true
+                    
+
+                },
+                {
+                    "id":12,
+                    "questionId":6,
+                    "answer":"Micro waves",
+                    "isAnswer": false
+                     
+                },
+                {
+                    "id":13,
+                    "questionId":6,
+                    "answer":"X-rays",
+                    "isAnswer": false
+                   
+                },
+                {
+                    "id":14,
+                    "questionId":6,
+                    "answer":"Visible Light",
+                    "isAnswer": false
+                    
+                }
+            ]
+        },
+        {
+            "id": 7,
+            "name": "What element do organic compound contain?",
+            "options":[
+                {
+                    "id":11,
+                    "questionId":7,
+                    "answer":"Hydrogen",
+                    "isAnswer": false
+                    
+
+                },
+                {
+                    "id":12,
+                    "questionId":7,
+                    "answer":"Nitrogen",
+                    "isAnswer": false
+                     
+                },
+                {
+                    "id":13,
+                    "questionId":7,
+                    "answer":"Oxygen",
+                    "isAnswer": false
+                   
+                },
+                {
+                    "id":14,
+                    "questionId":7,
+                    "answer":"Carbon",
+                    "isAnswer": true
+                    
+                }
+            ]
+        },
+        {
+            "id": 8,
+            "name": "Which country has the largest population?",
+            "options":[
+                {
+                    "id":11,
+                    "questionId":8,
+                    "answer":"Brazil",
+                    "isAnswer": false
+                    
+
+                },
+                {
+                    "id":12,
+                    "questionId":8,
+                    "answer":"Egypt",
+                    "isAnswer": false
+                     
+                },
+                {
+                    "id":13,
+                    "questionId":8,
+                    "answer":"Russia",
+                    "isAnswer": true
+                   
+                },
+                {
+                    "id":14,
+                    "questionId":8,
+                    "answer":"Germany",
+                    "isAnswer": false
+                    
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "name": "Columbus discovers America in ?",
+            "options":[
+                {
+                    "id":11,
+                    "questionId":9,
+                    "answer":"1201",
+                    "isAnswer": false
+                    
+
+                },
+                {
+                    "id":12,
+                    "questionId":9,
+                    "answer":"1492 ",
+                    "isAnswer": true
+                     
+                },
+                {
+                    "id":13,
+                    "questionId":9,
+                    "answer":"1575",
+                    "isAnswer": false
+                   
+                },
+                {
+                    "id":14,
+                    "questionId":9,
+                    "answer":"1699",
+                    "isAnswer": false
+                    
+                }
+            ]
+        },
+        {
+            "id": 10,
+            "name": "World War I begins in?",
+            "options":[
+                {
+                    "id":11,
+                    "questionId":10,
+                    "answer":"1914",
+                    "isAnswer": true
+                    
+
+                },
+                {
+                    "id":12,
+                    "questionId":10,
+                    "answer":"1813",
+                    "isAnswer": false
+                     
+                },
+                {
+                    "id":13,
+                    "questionId":10,
+                    "answer":"1755",
+                    "isAnswer": false
+                   
+                },
+                {
+                    "id":14,
+                    "questionId":10,
+                    "answer":"1898",
+                    "isAnswer": false
+                    
+                }
+            ]
+        }
+
+
+        
+    ]

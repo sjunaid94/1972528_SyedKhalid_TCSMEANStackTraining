@@ -1,0 +1,41 @@
+<div class="d-flex justify-content-center">
+    <button *ngIf = "!clicked" mat-fab style="color: burlywood;" (click)= "startQuiz()" style="height: 100px; width: 100px;" [disabled] = "clicked"> Start Quiz</button>
+
+<div class="container" *ngIf = "displayQuiz">
+    <div class="row">
+        <div class="col-sm-8 offset-2">
+            <div *ngIf = "currentQuestion < quiz.length">
+            <br><p class="text-center">{{currentQuestion+1}} of {{quiz.length}}</p><br>
+            <h2>{{quiz[currentQuestion].name}}</h2><br>
+            <ul class="list-group" *ngFor="let question of quiz[currentQuestion].options">
+                <li class="list-group-item list-group-item-action list-group-item-light">
+                    
+                    <input type="radio" name="options" (change)="onAnswer(question.isAnswer)" [disabled]="radioClicked" >
+                    {{question.answer}} 
+                     <h6 *ngIf="question.isAnswer && display " style="background-color:green; color: seashell; text-decoration-style: solid; font-size: 20px;"> Correct Answer</h6> </li>
+   
+            </ul>
+           <br> <div class="alert alert-danger" role="alert" *ngIf = "display" style="font-size: 40px;">Your answer is {{answer}}</div>
+        </div>
+            <div  *ngIf = "currentQuestion > quiz.length - 1"><br>
+               <br> <button class="btn btn-success btn-block" (click)="displayResult()">Show Result</button>
+                <div class="d-flex justify-content-center"><br>
+                <br><div  class="text-primary" *ngIf = "result"><br>
+                    Totat Questions: {{numberOfCorrectAnswers + numberOfIncorrectAnswers}} <br>
+                    Correct Answers: {{numberOfCorrectAnswers}} <br>
+                    Incorrect Answers: {{numberOfIncorrectAnswers}} <br>
+                    <div class="container-fluid" style="padding: 20px; border: solid 1px black;">
+                        
+                        Result: {{points}} % | {{resultMsg}} 
+                        
+                    </div>
+                
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </div>
+   
+</div>
+</div>
