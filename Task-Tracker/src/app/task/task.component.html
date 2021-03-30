@@ -1,0 +1,51 @@
+<div >
+    <h1 class="text-center" style="background-color: burlywood;">Task Tracker</h1>
+    <hr style="background-color: burlywood;">
+    <h2 class="text-left" style="font-size: 40px;"> To-do tasks</h2>
+    <form #taskRef="ngForm" (ngSubmit)="storeUser(taskRef.value)" class="text-center">
+        <mat-form-field>
+            <mat-label style= "color: darkseagreen; margin: 10px;">ID:</mat-label>
+            <input matInput type="text" name="id" ngModel style="margin: 10px;"/>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label style="color: darkseagreen;margin: 10px;">Name</mat-label>
+            <input matInput type="text" name="name" ngModel style="margin: 10px;"/>
+        </mat-form-field>
+        <br/>
+        <mat-form-field>
+            <mat-label style="color: darkseagreen;margin: 10px;">Task:</mat-label>
+            <input matInput type="text" name="task" ngModel style="margin: 10px;"/>
+        </mat-form-field>
+        <br>
+        <mat-form-field>
+            <mat-label style="color: darkseagreen;margin: 10px;">Deadline:</mat-label>
+            <input matInput type="text" name="deadline" ngModel style="margin: 10px;"/>
+        </mat-form-field>
+        <br>
+        <button mat-stroked-button color="primary" 
+        style="background-color:darkorange; padding: 5px; margin: 10px;" type="submit">Submit</button>
+        <button mat-stroked-button color="primary" 
+        style="background-color:darkorange; padding: 5px; margin: 10px;" type="reset">Reset</button>
+        
+    </form>
+  
+</div>
+
+
+<div >
+    <table  border="1" style="margin: 40px; width: 70%; border-color: blue;" class="table table-striped">
+        <tr class="bg-warning">
+            <th >Id</th>
+            <th>Name</th>
+            <th>Task</th>
+            <th>Deadline</th>
+        </tr>
+        <tr *ngFor="let tb of tasks">
+                <td class="table-primary">{{tb.id}}</td>
+                <td class="table-secondary">{{tb.name}}</td>
+                <td class="table-danger">{{tb.task}}</td>
+                <td class="table-info">{{tb.deadline}}</td>
+        </tr>
+    </table>
+</div>
